@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Addtocartmodal from './Components/AddToCartModal/Addtocartmodal';
+import Header from './Components/Header/Header';
+import { Orderplaced } from './Components/OrderPlaced/Orderplaced';
+import Pagination from './Components/Pagination/Pagination';
+import Productcard from './Components/ProductCard/Productcard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Ap">
+
+      <Header />
+      <Productcard />
+      <Addtocartmodal />
+      <Pagination />
+      <Orderplaced />
     </div>
   );
 }
