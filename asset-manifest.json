@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/chaperoneapp/static/css/main.6a2d1130.css",
-    "main.js": "/chaperoneapp/static/js/main.b387f9fb.js",
+    "main.css": "/chaperoneapp/static/css/main.e4ed3e83.css",
+    "main.js": "/chaperoneapp/static/js/main.3dd02418.js",
     "static/js/453.5f24f097.chunk.js": "/chaperoneapp/static/js/453.5f24f097.chunk.js",
     "index.html": "/chaperoneapp/index.html",
-    "main.6a2d1130.css.map": "/chaperoneapp/static/css/main.6a2d1130.css.map",
-    "main.b387f9fb.js.map": "/chaperoneapp/static/js/main.b387f9fb.js.map",
+    "main.e4ed3e83.css.map": "/chaperoneapp/static/css/main.e4ed3e83.css.map",
+    "main.3dd02418.js.map": "/chaperoneapp/static/js/main.3dd02418.js.map",
     "453.5f24f097.chunk.js.map": "/chaperoneapp/static/js/453.5f24f097.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a2d1130.css",
-    "static/js/main.b387f9fb.js"
+    "static/css/main.e4ed3e83.css",
+    "static/js/main.3dd02418.js"
   ]
 }
