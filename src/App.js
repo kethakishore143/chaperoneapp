@@ -1,3 +1,5 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Addtocartmodal from './Components/AddToCartModal/Addtocartmodal';
 import Header from './Components/Header/Header';
@@ -8,12 +10,12 @@ import Productcard from './Components/ProductCard/Productcard';
 function App() {
   return (
     <div className="Ap">
-
-      <Header />
-      <Productcard />
-      <Addtocartmodal />
-      <Pagination />
-      <Orderplaced />
+      <Router>
+        <Routes>
+          <Route path="/chaperoneapp" element={<Productcard />} />
+          <Route path="/Thankyouform" element={<Orderplaced />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

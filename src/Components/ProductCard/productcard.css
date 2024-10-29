@@ -106,7 +106,67 @@
 
 .Filter_container {
     background: #F0FFE5;
-    width: 500px;
+    width: 70%;
     padding: 10px;
+    height: 600px;
+    margin: 10px;
 
+}
+
+.product_card_container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.plant_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+
+}
+
+.sort_btn {
+    width: Hug (139px)px;
+    height: Hug (36px)px;
+    top: 719px;
+    left: 533px;
+    padding: 6px 7px 6px 7px;
+    gap: 15px;
+    opacity: 0px;
+    background: #165315;
+    margin: 10px;
+
+}
+
+.opt {
+    color: #ffffff;
+    font-size: 18px;
+    background: #165315;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.products_count {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+    color: #6A6A6A;
+    ;
+}
+
+.viewmore_btn {
+    width: 175px;
+    height: 43px;
+    opacity: 0px;
+    background: #144D14;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }

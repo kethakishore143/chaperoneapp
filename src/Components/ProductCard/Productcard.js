@@ -2,6 +2,7 @@ import React from 'react'
 
 import "./productcard.css"
 import { Productlist } from '../ProductList/Productlist'
+import Header from '../Header/Header'
 
 let NurseryPlants = [
     {
@@ -158,84 +159,98 @@ const Productcard = () => {
 
     return (
         <div>
-            <div className=''>
-                <button className='plant_btn'>Plants</button>
-                <button className='pots_btn'>Pots</button>
-            </div>
-            <div>
-                <p className='content'>Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum quidem aut necessitatibus enim ut internos accusantium a numquam autem ab rerum omnis. Non molestiae ratione et laborum doloribus aut molestiae voluptates ut porro excepturi sit molestiae obcaecati qui quis beatae est voluptatem eius. Et architecto nihil id labore omnis hic iste deleniti et porro aspernatur.</p>
+            <Header />
 
-            </div>
             <div>
-                <h2 className='Nursery_heading'>Nursery</h2>
-                <div className='container'>{NurseryPlants.map(eachobj => Nursery_products(eachobj))}</div>
-            </div>
-            <div className='Filter_container'>
-                <div className='Filter_options'>
-                    <span>Filter</span>
-                    <span>Clear All</span>
+                <div className=''>
+                    <button className='plant_btn'>Plants</button>
+                    <button className='pots_btn'>Pots</button>
                 </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Type of plants</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Price</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Nursery</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Ideal Plants Location</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Indoor/Outdoor</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Maintenance</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Plant Size</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Water Schedule</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Color</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Seasonal</span>
-                    <span>+</span>
-                </div>
-                <hr />
-                <div className='Filter_options'>
-                    <span>Light Efficent</span>
-                    <span>+</span>
-                </div>
-                <hr />
-            </div>
-            <div>
-                {ProductsList.map(eachobject => <Productlist objprops={eachobject} />)}
-            </div>
+                <div>
+                    <p className='content'>Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum quidem aut necessitatibus enim ut internos accusantium a numquam autem ab rerum omnis. Non molestiae ratione et laborum doloribus aut molestiae voluptates ut porro excepturi sit molestiae obcaecati qui quis beatae est voluptatem eius. Et architecto nihil id labore omnis hic iste deleniti et porro aspernatur.</p>
 
+                </div>
+                <div>
+                    <h2 className='Nursery_heading'>Nursery</h2>
+                    <div className='container'>{NurseryPlants.map(eachobj => Nursery_products(eachobj))}</div>
+                </div>
+                <div className='product_card_container'>
+                    <div className='Filter_container'>
+                        <div className='Filter_options'>
+                            <span>Filter</span>
+                            <span>Clear All</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Type of plants</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Price</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Nursery</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Ideal Plants Location</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Indoor/Outdoor</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Maintenance</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Plant Size</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Water Schedule</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Color</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Seasonal</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                        <div className='Filter_options'>
+                            <span>Light Efficent</span>
+                            <span>+</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div >
+                        <span className='products_count'>3000 Products</span>
+                        <button className='sort_btn'>
+                            <select className='opt'>
+                                <option>Sort By</option>
+                            </select>
+                        </button>
+                        <div className='plant_card'>
+                            {ProductsList.map(eachobject => <Productlist objprops={eachobject} />)}
+                        </div>
+                        <button className='viewmore_btn'>View more</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

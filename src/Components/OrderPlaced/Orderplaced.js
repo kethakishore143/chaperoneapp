@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 
 import "./Orderplaced.css"
@@ -32,7 +33,9 @@ export const Orderplaced = () => {
                     <h1>Thank you for choosing Chaperone services. <br /> We will soon get in touch with you!.</h1>
                 </div>
                 <div>
-                    <button className='continue_shoping_btn'>Continue  Shopping</button>
+                    <NavLink to="/chaperoneapp">
+                        <button className='continue_shoping_btn'>Continue  Shopping</button>
+                    </NavLink>
                 </div>
             </div>
         </div>
